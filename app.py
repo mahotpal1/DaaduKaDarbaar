@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, 
 from urllib.request import urlopen as uReq
 
 app = Flask(__name__)
