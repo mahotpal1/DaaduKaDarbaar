@@ -4,7 +4,6 @@ from urllib.request import urlopen as uReq
 app = Flask(__name__)
 
 @app.route("/", methods=['GET'])
-@cross_origin()
 def DaaduKitchen():
     return render_template("index.html")
 
