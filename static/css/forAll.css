@@ -52,9 +52,18 @@ body {
 .grid {
   display: grid;
   column-gap: 6.4rem;
-  gap: 9.6rem;
+  row-gap: 9.6rem;
+
+  /* margin-bottom: 9.6rem; */
 }
 
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -65,6 +74,10 @@ body {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid-center-v {
@@ -164,4 +177,8 @@ body {
   height: 4.8rem;
   border-radius: 35%;
   border-color: #e67e22;
+}
+
+strong {
+  font-weight: 500;
 }
