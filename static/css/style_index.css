@@ -509,7 +509,7 @@
 /*******************/
 
 .section-cta {
-  padding: 9.6rem 0;
+  padding: 4.6rem 0 12.8rem;
 }
 
 .cta {
@@ -519,7 +519,6 @@
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
-  height: 50rem;
   overflow: hidden;
 }
 
@@ -536,7 +535,7 @@
 .cta-text {
   font-size: 1.8rem;
   line-height: 1.8;
-  margin-bottom: 3.8rem;
+  margin-bottom: 4.8rem;
 }
 
 .cta-img-box {
