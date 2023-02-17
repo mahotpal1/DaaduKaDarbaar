@@ -129,16 +129,20 @@ step 3) Add the css's those are affected in the current device.*/
   }
 
   .main-nav {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.5s ease-out;
+    transition: all 0.5s ease-in;
+
+    transform: translateX(100%);
 
     /* Hide the navigation */
     /* Hide it visually */
@@ -171,7 +175,22 @@ step 3) Add the css's those are affected in the current device.*/
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
+    transform: translateX(0);
   }
+}
+
+/*fixing safari flexbox gap*/
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
 }
 
 /* For smaller tablets */
